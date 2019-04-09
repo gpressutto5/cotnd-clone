@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Entities/entity.gd" type="Script" id=1]
+[ext_resource path="res://Sprites/sheet.png" type="Texture" id=2]
+
+[node name="Enemy" type="Node2D"]
+position = Vector2( 16, 16 )
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_group_": true
+}
+type = 2
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+region_enabled = true
+region_rect = Rect2( 0, 32, 32, 32 )
+
